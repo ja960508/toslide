@@ -1,0 +1,264 @@
+html,
+body {
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 1440px;
+}
+
+/* header */
+.header {
+  padding: 1.125rem 16rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 137.5px;
+  height: auto;
+}
+
+.translate {
+  margin-right: 1rem;
+  color: var(--toslide-normal-gray);
+  outline: none !important;
+}
+.translate.active {
+  color: black;
+}
+
+/* join */
+.join-section {
+  width: 100%;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.join-section-background-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.toslide-logo-slogan {
+  width: 414px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-60%);
+}
+
+.join-buttons {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  top: 65%;
+}
+
+.join {
+  width: 204px;
+  min-width: 120px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ffffff;
+  background-color: var(--toslide-blue);
+  border-radius: 2rem;
+  box-shadow: 0px 0.25rem 1rem #ffffff40;
+  opacity: 0.9;
+  -webkit-text-fill-color: #ffffff;
+  color: #ffffff;
+  outline: 0 !important;
+}
+
+.join__lecturer {
+  margin-right: 1.5rem;
+}
+
+/* tutorial-section */
+.tutorial-section {
+  width: 100%;
+  padding: 3rem 0;
+  background-color: var(--toslide-background-gray);
+}
+.wrap-tutorial-section {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tutorial-section__mode {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 1rem;
+  padding: 0 2.5vw;
+  display: flex;
+  justify-content: space-around;
+}
+.tutorial-section__mode__items {
+  color: var(--toslide-font-gray);
+  cursor: pointer;
+}
+
+.tutorial-section__mode__items.selected {
+  color: var(--toslide-blue);
+}
+
+.tutorial-section__header {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.tutorial-section__content {
+  width: 1200px;
+  margin: 0 40px;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 7rem;
+}
+
+.tutorial-section__content__img-content {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.joiner-mode {
+  font: normal normal bold 1.5vw Roboto;
+  color: var(--toslide-font-gray);
+  text-align: center;
+}
+
+.joiner-mode-btn {
+  outline: none !important;
+}
+
+.joiner-mode-btn:hover,
+.joiner-mode-btn.selected {
+  color: var(--toslide-blue);
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#select_lecturer {
+  margin-right: 4.2vw;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+.footer-text {
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.copyright-text {
+  color: var(--toslide-blue);
+  opacity: 0.5;
+}
+.emali-text {
+  color: var(--toslide-font-gray);
+}
+.privacy-anchor {
+  color: var(--toslide-blue);
+}
+
+/* heedae add */
+.tutorial-section__content {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.video-box {
+  position: relative;
+  width: 100%;
+  height: 0;
+  margin-top: 5rem;
+  padding-bottom: 56.25%;
+  text-align: center;
+}
+.video {
+  position: absolute;
+  top: 1rem;
+  left: 10%;
+  width: 80%;
+  height: 90%;
+}
+.video-box figcaption {
+  position: absolute;
+  top: -2rem;
+  left: 10%;
+  color: var(--toslide-blue);
+  font: normal normal bold 1.2rem 'Roboto' !important;
+}
+
+/* media query */
+.wrap.mobile {
+  min-width: 320px;
+}
+
+.wrap.mobile .header {
+  padding: 0.5rem 1.25rem;
+}
+
+.wrap.mobile .join-section {
+  height: 16.5rem;
+}
+.wrap.mobile .join-buttons {
+  color: white !important;
+}
+
+.wrap.mobile .join {
+  width: 154px;
+}
+.wrap.mobile .join__lecturer {
+  margin-right: 0.5rem;
+}
+* {
+  box-sizing: border-box;
+}
+.wrap.mobile .joiner-mode {
+  font: normal normal bold 14px Roboto;
+  color: var(--toslide-font-gray);
+}
+
+.wrap.mobile .toslide-logo-slogan {
+  width: 242px;
+}
+
+.wrap.mobile .tutorial-section {
+  padding: 1rem 1.25rem;
+}
+.wrap.mobile .tutorial-section__mode {
+  padding: 0;
+  flex-direction: column;
+}
+.wrap.mobile .tutorial-section__mode__items {
+  margin-bottom: 1rem;
+}
+.wrap.mobile .tutorial-section__content {
+  width: 100%;
+  margin-bottom: 0;
+}

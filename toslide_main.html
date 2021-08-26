@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./toslide_main.css?a=20210512" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <img src="./images/toslide_logo.png" alt="logo" class="logo" />
+        <div class="translate-buttons">
+          <button
+            class="translate translate__korean toslide-font-medium-normal"
+            onclick="textTranslate(this)"
+          >
+            한국어
+          </button>
+          <button
+            class="
+              translate translate__english
+              toslide-font-medium-normal
+              active
+            "
+            onclick="textTranslate(this)"
+          >
+            English
+          </button>
+        </div>
+      </header>
+      <section class="join-section">
+        <img
+          src="./images/toslide_background.png"
+          alt="join-section-background-img"
+          id="bg_img"
+          class="join-section-background-img"
+        />
+        <img
+          src="./images/toslide_logo_slogan.png"
+          alt="toslide_logo_slogan"
+          id="toslide_logo_slogan"
+          class="toslide-logo-slogan"
+        />
+        <div class="join-buttons" id="toslide_join_button_container">
+          <button
+            id="lbutton"
+            class="join join__lecturer toslide-font-very-large-bold"
+            disabled
+            onclick="loginToslide_lecturer()"
+          ></button>
+          <button
+            id="sbutton"
+            class="join join__audience toslide-font-very-large-bold"
+            disabled
+            onclick="loginToslide_student()"
+          ></button>
+        </div>
+      </section>
+      <section class="tutorial-section">
+        <div class="wrap-tutorial-section">
+          <div class="tutorial-section__header">
+            <ul class="tutorial-section__mode">
+              <li
+                class="
+                  tutorial-section__mode__items
+                  toslide-font-very-large-bold
+                  selected
+                "
+                id="toslide_intro"
+                onclick="tutorialModeSelect(this)"
+              ></li>
+              <li
+                class="
+                  tutorial-section__mode__items
+                  toslide-font-very-large-bold
+                "
+                id="toslide_qna"
+                onclick="tutorialModeSelect(this)"
+              ></li>
+              <li
+                class="
+                  tutorial-section__mode__items
+                  toslide-font-very-large-bold
+                "
+                id="toslide_online_test"
+                onclick="tutorialModeSelect(this)"
+              ></li>
+              <li
+                class="
+                  tutorial-section__mode__items
+                  toslide-font-very-large-bold
+                "
+                id="toslide_online_lecture"
+                onclick="tutorialModeSelect(this)"
+              ></li>
+            </ul>
+          </div>
+          <div class="tutorial-section__content">
+            <div class="joiner-mode d-none">
+              <button
+                class="joiner-mode-btn selected"
+                id="select_lecturer"
+                onclick="selectTutorialContent(this)"
+              ></button>
+              <button
+                class="joiner-mode-btn"
+                id="select_student"
+                onclick="selectTutorialContent(this)"
+              ></button>
+            </div>
+            <div id="tutorial-videos"></div>
+            <img
+              src="./images/eng_image/tutorial_toslide_intro.jpg"
+              alt="tutorial-section__img-content"
+              id="tutorial_img_content"
+              class="tutorial-section__content__img-content"
+            />
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <img src="./images/toslide_logo.png" alt="logo" class="logo" />
+        <p class="footer-text copyright-text toslide-font-large-normal">
+          Copyright ©
+          <a target="_blank" href="https://sites.google.com/view/dmphongik"
+            >Hongik DMP Labs</a
+          >
+          + <a href="https://sunnygraphy.com/">SunnyGraphy</a> Inc.
+        </p>
+        <p class="footer-text emali-text toslide-font-large-normal">
+          Contact: leeh@hongik.ac.kr
+        </p>
+        <a
+          href="https://toslide.com/privacy_policy.txt"
+          target="_blank"
+          class="footer-text privacy-anchor toslide-font-large-normal"
+          >Privacy Policy</a
+        >
+      </footer>
+    </div>
+  </body>
+  <script>
+    function enable_bts() {
+      document.getElementById('lbutton').disabled = false;
+      document.getElementById('sbutton').disabled = false;
+    }
+  </script>
+  <script src="./toslide_main.js?a=202108222313"></script>
+  <script src="./toslide_main_translate.js?a=20210820"></script>
+</html>

@@ -1,0 +1,128 @@
+.footer {
+  height: 100%;
+}
+
+.message-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--toslide-gray);
+}
+
+.message-num {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  color: var(--toslide-font-gray);
+}
+
+.message-container {
+  width: 80%;
+  height: 100%;
+}
+
+.message-info {
+  height: 32px;
+}
+
+.message-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.message-content:hover {
+  white-space: normal;
+  overflow: visible;
+}
+
+.message-vote-container {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+.message-keyword {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.message-keyword-items {
+  border: 1px solid rgba(69, 53, 243, 0.25);
+  border-radius: 13px;
+  text-align: center;
+  color: #4535f3;
+  padding: calc(var(--padding-very-small));
+  margin-right: var(--margin-small);
+}
+
+.message-vote {
+  color: #4535f3;
+}
+
+.save-excel {
+  width: 25%;
+  min-width: 120px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid var(--toslide-gray);
+  background-color: white;
+  box-shadow: 0px 0px 8px #0000001a;
+  border-radius: 5px;
+  color: white;
+}
+
+.save-image {
+  width: 24px;
+}
+
+.function-text {
+  color: black;
+}
+
+/* photo */
+
+.photo-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--padding-very-small) 0;
+  border-bottom: 1px solid var(--toslide-gray);
+  height: 169.75px;
+  cursor: pointer;
+  /* 30 33 */
+}
+
+.photo-items .image-container {
+  height: 100%;
+  width: 90%;
+}
+.photo-items .photo-num {
+  width: 10%;
+  height: auto;
+}
+
+.photo-items .photo-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--toslide-font-gray);
+}
+
+.photo-items .image-section {
+  width: 100%;
+  border: 1px solid var(--toslide-gray);
+  border-radius: var(--border-radius);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.image-section-image {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
