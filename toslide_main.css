@@ -92,7 +92,7 @@ body {
 .tutorial-section {
   width: 100%;
   padding: 3rem 0;
-  background-color: var(--toslide-background-gray);
+  background-color: white;
 }
 .wrap-tutorial-section {
   margin: auto;
@@ -104,8 +104,7 @@ body {
 .tutorial-section__mode {
   width: 100%;
   list-style: none;
-  margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   padding: 0 1.5rem;
   display: flex;
   justify-content: space-around;
@@ -165,7 +164,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 0;
+  padding: 1.25rem 0;
+  background-color: var(--toslide-background-gray);
 }
 
 .footer-text {
@@ -218,8 +218,16 @@ body {
   min-width: 320px;
 }
 
+.wrap.mobile .logo {
+  width: 93px;
+}
+
 .wrap.mobile .header {
-  padding: 0.5rem 1.25rem;
+  padding: 0.55rem 1.25rem;
+}
+
+.wrap.mobile .join {
+  height: 40px;
 }
 
 .wrap.mobile .join-section {
@@ -233,7 +241,7 @@ body {
   width: 154px;
 }
 .wrap.mobile .join__lecturer {
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 * {
   box-sizing: border-box;
@@ -248,14 +256,15 @@ body {
 }
 
 .wrap.mobile .tutorial-section {
-  padding: 1rem 1.25rem;
+  padding: 2rem 1.25rem;
 }
 .wrap.mobile .tutorial-section__mode {
   padding: 0;
   flex-direction: column;
+  margin-bottom: 0;
 }
 .wrap.mobile .tutorial-section__mode__items {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .wrap.mobile .tutorial-section__content {
   width: 100%;

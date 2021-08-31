@@ -92,6 +92,10 @@ input[type='email'] {
   font: normal normal 700 16px/19px Roboto;
 }
 
+.toslide-font-very-large-medium {
+  font: normal normal normal 20px/24px Roboto;
+}
+
 .toslide-font-very-large-bold {
   font: normal normal 700 20px/24px Roboto;
 }
@@ -102,4 +106,10 @@ input[type='email'] {
 
 .wrap.wrap.mobile .toslide-font-large-normal {
   font: normal normal 500 12px/19px Roboto;
+}
+.wrap.mobile .toslide-font-very-large-medium {
+  font: normal normal normal 16px/20px Roboto;
+}
+.wrap.mobile .toslide-font-very-large-bold {
+  font: normal normal bold 16px/20px Roboto;
 }
