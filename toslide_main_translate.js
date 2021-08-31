@@ -3,6 +3,7 @@ function textTranslate(target) {
   const korean = document.querySelector('.translate__korean');
   const english = document.querySelector('.translate__english');
   const bgImg = document.querySelector('#bg_img');
+  const wrap = document.querySelector('.wrap');
   const toslideLogoSlogan = document.querySelector('#toslide_logo_slogan');
   const domArray = [
     document.querySelector('#lbutton'),
@@ -42,7 +43,9 @@ function textTranslate(target) {
         translate(domArray, koreanText);
         english.classList.remove('active');
         korean.classList.add('active');
+        wrap.classList.add('korean');
         toslideLogoSlogan.src = './images/toslide_logo_slogan.png';
+
         if (parent.is_mobile() && false) {
           document.getElementById('bg_img').src = './images/homepage_m_bg.jpg';
         } else {
@@ -53,17 +56,12 @@ function textTranslate(target) {
       }
       break;
     case 'English':
-      console.log(english.classList.contains('active'));
       if (!english.classList.contains('active')) {
         translate(domArray, engText);
         korean.classList.remove('active');
         english.classList.add('active');
+        wrap.classList.remove('korean');
         toslideLogoSlogan.src = './images/eng_image/toslide_logo_slogan.png';
-        tutorialModeSelect(document.querySelector('.selected'));
-      } else {
-        translate(domArray, engText);
-        korean.classList.remove('active');
-        english.classList.add('active');
         tutorialModeSelect(document.querySelector('.selected'));
       }
       break;

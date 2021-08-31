@@ -100,6 +100,10 @@ input[type='email'] {
   font: normal normal 700 20px/24px Roboto;
 }
 
+.wrap.korean .toslide-font-very-large-medium {
+  font: normal normal bold 20px/24px Roboto;
+}
+
 .wrap.mobile .toslide-font-very-large-bold {
   font: normal normal 700 14px Roboto;
 }
