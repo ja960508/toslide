@@ -106,6 +106,9 @@ p {
 .wrap.korean .toslide-font-very-large-medium {
   font: normal normal 500 17.5px/24px Roboto;
 }
+.wrap.korean .toslide-font-very-large-bold {
+  font: normal normal bold 17.5px/24px Roboto;
+}
 
 .wrap.mobile .toslide-font-very-large-bold {
   font: normal normal 700 14px Roboto;

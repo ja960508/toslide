@@ -103,7 +103,7 @@ function addVideoBox(videoList) {
     div.className = 'video-box';
     div.innerHTML =
       `
-      <figcaption>` +
+      <figcaption class="toslide-font-very-large-bold">` +
       videoInfo[0] +
       `</figcaption>
       <iframe src="` +
