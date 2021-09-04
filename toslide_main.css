@@ -122,6 +122,7 @@ body {
 
 .tutorial-section__mode__items.selected {
   color: var(--toslide-blue);
+  font-weight: bold !important;
 }
 
 .tutorial-section__content {
