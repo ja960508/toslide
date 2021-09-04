@@ -46,12 +46,12 @@ function textTranslate(target) {
         wrap.classList.add('korean');
         toslideLogoSlogan.src = './images/toslide_logo_slogan.png';
 
-        if (parent.is_mobile() && false) {
-          document.getElementById('bg_img').src = './images/homepage_m_bg.jpg';
-        } else {
-          document.getElementById('bg_img').src =
-            './images/toslide_background.png';
-        }
+        // if (parent.is_mobile() && false) {
+        //   document.getElementById('bg_img').src = './images/homepage_m_bg.jpg';
+        // } else {
+        //   document.getElementById('bg_img').src =
+        //     './images/toslide_background.png';
+        // }
         tutorialModeSelect(document.querySelector('.selected'));
       }
       break;

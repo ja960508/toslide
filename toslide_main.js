@@ -276,10 +276,10 @@ window.onload = function () {
   const wrappper = document.querySelector('.wrap');
   console.log('toslide_main loaded');
   if (parent.is_mobile()) {
-    //document.getElementById("bg_img").src = "./images/homepage_m_bg.jpg";
+    document.getElementById('bg_img').src = './images/homepage_m_bg.png';
     wrappper.classList.add('mobile');
   } else {
-    //document.getElementById("bg_img").src = "./images/homepage_pc_bg.jpg";
+    document.getElementById('bg_img').src = './images/toslide_background.png';
   }
 
   var current_web_region = navigator.language;

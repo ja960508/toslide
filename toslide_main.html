@@ -37,6 +37,7 @@
           >
             한국어
           </button>
+          |
           <button
             class="
               translate translate__english
@@ -51,7 +52,7 @@
       </header>
       <section class="join-section">
         <img
-          src="./images/toslide_background.png"
+          src=""
           alt="join-section-background-img"
           id="bg_img"
           class="join-section-background-img"
@@ -65,13 +66,13 @@
         <div class="join-buttons" id="toslide_join_button_container">
           <button
             id="lbutton"
-            class="join join__lecturer toslide-font-very-large-medium"
+            class="join join__lecturer"
             disabled
             onclick="loginToslide_lecturer()"
           ></button>
           <button
             id="sbutton"
-            class="join join__audience toslide-font-very-large-medium"
+            class="join join__audience"
             disabled
             onclick="loginToslide_student()"
           ></button>
@@ -79,43 +80,41 @@
       </section>
       <section class="tutorial-section">
         <div class="wrap-tutorial-section">
-          <div class="tutorial-section__header">
-            <ul class="tutorial-section__mode">
-              <li
-                class="
-                  tutorial-section__mode__items
-                  toslide-font-very-large-medium
-                  selected
-                "
-                id="toslide_intro"
-                onclick="tutorialModeSelect(this)"
-              ></li>
-              <li
-                class="
-                  tutorial-section__mode__items
-                  toslide-font-very-large-medium
-                "
-                id="toslide_qna"
-                onclick="tutorialModeSelect(this)"
-              ></li>
-              <li
-                class="
-                  tutorial-section__mode__items
-                  toslide-font-very-large-medium
-                "
-                id="toslide_online_test"
-                onclick="tutorialModeSelect(this)"
-              ></li>
-              <li
-                class="
-                  tutorial-section__mode__items
-                  toslide-font-very-large-medium
-                "
-                id="toslide_online_lecture"
-                onclick="tutorialModeSelect(this)"
-              ></li>
-            </ul>
-          </div>
+          <ul class="tutorial-section__mode">
+            <li
+              class="
+                tutorial-section__mode__items
+                toslide-font-very-large-medium
+                selected
+              "
+              id="toslide_intro"
+              onclick="tutorialModeSelect(this)"
+            ></li>
+            <li
+              class="
+                tutorial-section__mode__items
+                toslide-font-very-large-medium
+              "
+              id="toslide_qna"
+              onclick="tutorialModeSelect(this)"
+            ></li>
+            <li
+              class="
+                tutorial-section__mode__items
+                toslide-font-very-large-medium
+              "
+              id="toslide_online_test"
+              onclick="tutorialModeSelect(this)"
+            ></li>
+            <li
+              class="
+                tutorial-section__mode__items
+                toslide-font-very-large-medium
+              "
+              id="toslide_online_lecture"
+              onclick="tutorialModeSelect(this)"
+            ></li>
+          </ul>
           <div class="tutorial-section__content">
             <div class="joiner-mode d-none">
               <button
@@ -140,16 +139,19 @@
         </div>
       </section>
       <footer class="footer">
-        <img src="./images/toslide_logo.png" alt="logo" class="logo" />
+        <img src="./images/toslide_logo.png" alt="logo" class="footer-logo" />
         <p class="footer-text copyright-text toslide-font-large-normal">
           Copyright ©
-          <a target="_blank" href="https://sites.google.com/view/dmphongik"
-            >Hongik DMP Labs</a
-          >
-          + <a href="https://sunnygraphy.com/">SunnyGraphy</a> Inc.
+          <a href="https://sunnygraphy.com/">SunnyGraphy</a> Inc. Seoul, Korea
         </p>
         <p class="footer-text emali-text toslide-font-large-normal">
-          Contact: leeh@hongik.ac.kr
+          Hongik DMP Labs &ensp;|&ensp;
+          <img
+            src="./images/footer_email.png"
+            alt="email"
+            class="footer-email"
+          />
+          leeh@hongik.ac.kr
         </p>
         <a
           href="https://toslide.com/privacy_policy.txt"

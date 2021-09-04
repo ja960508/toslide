@@ -35,6 +35,9 @@ input[type='email'] {
   font-size: var(--toslide-font-size);
   background-color: white;
 }
+p {
+  margin: 0;
+}
 
 .toslide-normal-gray {
   background-color: var(--toslide-gray) !important;
@@ -70,7 +73,7 @@ input[type='email'] {
 }
 
 .toslide-font-medium-normal {
-  font: normal normal 500 14px/16px Roboto;
+  font: normal normal normal 14px/16px Roboto;
 }
 .toslide-font-medium-medium {
   font: normal normal 600 14px/16px Roboto;
@@ -101,7 +104,7 @@ input[type='email'] {
 }
 
 .wrap.korean .toslide-font-very-large-medium {
-  font: normal normal 600 18px/24px Roboto;
+  font: normal normal 500 17.5px/24px Roboto;
 }
 
 .wrap.mobile .toslide-font-very-large-bold {
@@ -109,10 +112,10 @@ input[type='email'] {
 }
 
 .wrap.wrap.mobile .toslide-font-large-normal {
-  font: normal normal 500 12px/19px Roboto;
+  font: normal normal normal 12px/19px Roboto;
 }
 .wrap.mobile .toslide-font-very-large-medium {
-  font: normal normal normal 16px/20px Roboto;
+  font: normal normal 500 16px/19px Roboto;
 }
 .wrap.mobile .toslide-font-very-large-bold {
   font: normal normal bold 16px/20px Roboto;

@@ -8,29 +8,37 @@ body {
   flex-direction: column;
   width: 100%;
   min-width: 1440px;
+  max-width: 1920px;
 }
 
 /* header */
 .header {
-  padding: 1.125rem 23rem;
+  padding: 0.95rem 23.5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--toslide-normal-gray);
 }
 
 .logo {
-  width: 137.5px;
+  width: 100px;
   height: auto;
 }
 
 .translate {
-  margin-right: 1rem;
   color: var(--toslide-normal-gray);
   outline: none !important;
 }
 .translate.active {
   color: black;
+  font-weight: 500;
+}
+.translate__korean {
+  margin-right: 0.5rem;
+}
+.translate__english {
+  margin-left: 0.5rem;
 }
 
 /* join */
@@ -53,8 +61,7 @@ body {
   width: 432px;
   height: auto;
   position: absolute;
-  top: 50%;
-  transform: translateY(-60%);
+  top: 32.5%;
 }
 
 .join-buttons {
@@ -64,24 +71,25 @@ body {
   justify-content: center;
   width: 100%;
   height: 50px;
-  top: 65%;
+  top: 60%;
 }
 
 .join {
   width: 204px;
-  min-width: 120px;
-  height: 46px;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 2px solid #ffffff;
-  background-color: var(--toslide-blue);
   border-radius: 2rem;
+  background-color: var(--toslide-blue);
   box-shadow: 0px 0.25rem 1rem #ffffff40;
   opacity: 0.9;
   -webkit-text-fill-color: #ffffff;
   color: #ffffff;
   outline: 0 !important;
+
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .join__lecturer {
@@ -91,23 +99,22 @@ body {
 /* tutorial-section */
 .tutorial-section {
   width: 100%;
-  padding: 3rem 0;
+  padding: 3.5rem 0 7rem;
   background-color: white;
 }
 .wrap-tutorial-section {
-  margin: auto;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .tutorial-section__mode {
-  width: 100%;
+  width: 938px;
+  padding: 0;
   list-style: none;
   margin-bottom: 1.5rem;
-  padding: 0 1.5rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .tutorial-section__mode__items {
   color: var(--toslide-font-gray);
@@ -118,17 +125,11 @@ body {
   color: var(--toslide-blue);
 }
 
-.tutorial-section__header {
-  width: 100%;
-  max-width: 1200px;
-}
-
 .tutorial-section__content {
   width: 1200px;
   margin: 0 40px;
   position: relative;
   border-radius: 20px;
-  margin-bottom: 7rem;
 }
 
 .tutorial-section__content__img-content {
@@ -164,29 +165,48 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.25rem 0;
+  padding: 1.125rem 0 1.5rem;
   background-color: var(--toslide-background-gray);
 }
 
+.footer-logo {
+  width: 108px;
+}
+
 .footer-text {
-  margin-top: 0.75rem;
-  margin-bottom: 0;
+  margin-top: 0.375rem;
+  font: normal normal 500 12px/14px Roboto;
+}
+
+.footer a {
+  color: var(--toslide-blue);
 }
 
 .copyright-text {
   color: var(--toslide-blue);
   opacity: 0.5;
 }
+.copyright-text a {
+  text-decoration: none;
+}
 .emali-text {
-  color: var(--toslide-font-gray);
+  margin-top: 0.5625rem;
+  color: #afafb3;
+  display: flex;
+  align-items: center;
+}
+.footer-email {
+  width: 14px;
+  margin: 0 4px;
 }
 .privacy-anchor {
-  color: var(--toslide-blue);
+  margin-top: 31px;
+  font: normal normal 500 14px/16px Roboto;
 }
 
 /* heedae add */
 .tutorial-section__content {
-  padding: 2rem 0;
+  padding: 2rem 0 0;
   background-color: #ffffff;
   border-radius: 20px;
 }
@@ -213,6 +233,11 @@ body {
   font: normal normal bold 1.2rem 'Roboto' !important;
 }
 
+/* korean */
+.wrap.korean .tutorial-section__mode {
+  width: 860px;
+}
+
 /* media query */
 .wrap.mobile {
   min-width: 320px;
@@ -223,7 +248,7 @@ body {
 }
 
 .wrap.mobile .header {
-  padding: 0.55rem 1.25rem;
+  padding: 0.625rem 1.5rem;
 }
 
 .wrap.mobile .join {
@@ -238,7 +263,8 @@ body {
 }
 
 .wrap.mobile .join {
-  width: 154px;
+  width: 150px;
+  font: normal normal normal 16px/19px Roboto;
 }
 .wrap.mobile .join__lecturer {
   margin-right: 1rem;
@@ -252,13 +278,15 @@ body {
 }
 
 .wrap.mobile .toslide-logo-slogan {
+  top: 25%;
   width: 242px;
 }
 
 .wrap.mobile .tutorial-section {
-  padding: 2rem 1.25rem;
+  padding: 1.875rem 1.5rem 3rem;
 }
 .wrap.mobile .tutorial-section__mode {
+  width: 100%;
   padding: 0;
   flex-direction: column;
   margin-bottom: 0;
