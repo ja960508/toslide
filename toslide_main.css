@@ -6,9 +6,9 @@ body {
 .wrap {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  min-width: 1440px;
-  max-width: 1920px;
+  width: 1920px;
+  /* min-width: 1440px;
+  max-width: 1920px; */
 }
 
 /* header */
