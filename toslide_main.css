@@ -3,18 +3,29 @@ body {
   width: 100%;
 }
 
+/* wrappper */
+
 .wrap {
   display: flex;
   flex-direction: column;
-  width: 1920px;
-  /* min-width: 1440px;
-  max-width: 1920px; */
+  width: 100%;
+}
+.wrap.mobile {
+  width: 375px;
+}
+.header-wrap {
+  width: 100%;
+  min-width: 1168px;
+  padding: 0.95rem 0;
+  text-align: center;
 }
 
 /* header */
 .header {
-  padding: 0.95rem 23.5rem;
-  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1168px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,6 +59,7 @@ body {
 /* join */
 .join-section {
   width: 100%;
+  min-width: 1168px;
   height: 540px;
   display: flex;
   justify-content: center;
