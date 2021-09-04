@@ -34,6 +34,10 @@ body {
   color: black;
   font-weight: 500;
 }
+.translate__korean.active {
+  color: black;
+  font-weight: bold;
+}
 .translate__korean {
   margin-right: 0.5rem;
 }
