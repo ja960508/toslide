@@ -83,7 +83,6 @@ body {
   border-radius: 2rem;
   background-color: var(--toslide-blue);
   box-shadow: 0px 0.25rem 1rem #ffffff40;
-  opacity: 0.9;
   -webkit-text-fill-color: #ffffff;
   color: #ffffff;
   outline: 0 !important;
@@ -264,6 +263,7 @@ body {
 
 .wrap.mobile .join {
   width: 150px;
+  border-width: 1px;
   font: normal normal normal 16px/19px Roboto;
 }
 .wrap.mobile .join__lecturer {
