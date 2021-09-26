@@ -44,7 +44,12 @@ function textTranslate(target) {
         english.classList.remove('active');
         korean.classList.add('active');
         wrap.classList.add('korean');
-        toslideLogoSlogan.src = './images/toslide_logo_slogan.png';
+
+        if (parent.is_mobile()) {
+          toslideLogoSlogan.src = './images/toslide_logo_slogan_mobile.png';
+        } else {
+          toslideLogoSlogan.src = './images/toslide_logo_slogan.png';
+        }
 
         // if (parent.is_mobile() && false) {
         //   document.getElementById('bg_img').src = './images/homepage_m_bg.jpg';
@@ -61,7 +66,12 @@ function textTranslate(target) {
         korean.classList.remove('active');
         english.classList.add('active');
         wrap.classList.remove('korean');
-        toslideLogoSlogan.src = './images/eng_image/toslide_logo_slogan.png';
+        if (parent.is_mobile()) {
+          toslideLogoSlogan.src =
+            './images/eng_image/toslide_logo_slogan_mobile.png';
+        } else {
+          toslideLogoSlogan.src = './images/eng_image/toslide_logo_slogan.png';
+        }
         tutorialModeSelect(document.querySelector('.selected'));
       }
       break;

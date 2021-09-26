@@ -277,6 +277,8 @@ window.onload = function () {
   console.log('toslide_main loaded');
   if (parent.is_mobile()) {
     document.getElementById('bg_img').src = './images/homepage_m_bg.png';
+    document.getElementById('toslide_logo_slogan').src =
+      './images/toslide_logo_slogan_mobile.png';
     wrappper.classList.add('mobile');
   } else {
     document.getElementById('bg_img').src = './images/toslide_background.png';
